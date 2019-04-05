@@ -88,7 +88,7 @@ function HeaderLinks({ ...props }) {
   return (
     <List className={classes.list + " " + classes.mlAuto}>
       <ListItem className={classes.listItem}>
-        {/* <CustomDropdown
+        <CustomDropdown
           noLiPadding
           navDropdown
           hoverColor={dropdownHoverColor}
@@ -115,10 +115,10 @@ function HeaderLinks({ ...props }) {
               Documentation
             </a>
           ]}
-        /> */}
+        />
       </ListItem>
       <ListItem className={classes.listItem}>
-        {/* <CustomDropdown
+        <CustomDropdown
           noLiPadding
           navDropdown
           hoverColor={dropdownHoverColor}
@@ -186,10 +186,10 @@ function HeaderLinks({ ...props }) {
               <Call className={classes.dropdownIcons} /> Contacts
             </Link>
           ]}
-        /> */}
+        />
       </ListItem>
       <ListItem className={classes.listItem}>
-        {/* <CustomDropdown
+        <CustomDropdown
           noLiPadding
           navDropdown
           hoverColor={dropdownHoverColor}
@@ -240,7 +240,7 @@ function HeaderLinks({ ...props }) {
               <Error className={classes.dropdownIcons} /> Error Page
             </Link>
           ]}
-        /> */}
+        />
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
