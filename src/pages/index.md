@@ -1,6 +1,7 @@
 ---
 templateKey: index-page
 title: Title
+<<<<<<< HEAD
 image: /img/home-jumbotron.jpg
 heading: Heading
 subheading: Subheading
@@ -74,4 +75,42 @@ pricing:
         - items3
       plan: Custom
       price: "250"
+=======
+image: /img/screen-shot-2019-03-09-at-12.21.42-am.png
+heading: Heading
+subheading: Subheading
+mainpitch:
+  title: Title
+  description: Description
+description: Description
+intro:
+  blurbs:
+    - image: /img/screen-shot-2019-03-09-at-12.21.42-am.png
+      text: |
+        Text
+    - image: /img/screen-shot-2019-03-09-at-12.21.42-am.png
+      text: |
+        Text
+    - image: /img/screen-shot-2019-03-09-at-12.21.42-am.png
+      text: |
+        Text
+    - image: /img/screen-shot-2019-03-09-at-12.21.42-am.png
+      text: |
+        Text
+  heading: Heading
+  description: Description
+main:
+  heading: Heading
+  description: Description
+  image1:
+    alt: Alt
+    image: /img/screen-shot-2019-03-09-at-12.21.42-am.png
+  image2:
+    alt: Alt
+    image: /img/screen-shot-2019-03-09-at-12.21.42-am.png
+  image3:
+    alt: Alt
+    image: /img/screen-shot-2019-03-09-at-12.21.42-am.png
+>>>>>>> eb7b1208b2d62a6033906557c530273bd470d4e6
 ---
+
