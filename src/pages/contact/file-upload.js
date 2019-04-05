@@ -1,51 +1,51 @@
-import React from 'react'
-import { navigate } from 'gatsby-link'
-import Layout from '../../components/Layout'
+import React from "react";
+import { navigate } from "gatsby-link";
+import Layout from "../../components/Layout";
 
 function encode(data) {
-  const formData = new FormData()
+  const formData = new FormData();
 
   for (const key of Object.keys(data)) {
-    formData.append(key, data[key])
+    formData.append(key, data[key]);
   }
 
-  return formData
+  return formData;
 }
 
 export default class Contact extends React.Component {
   constructor(props) {
-    super(props)
-    this.state = {}
+    super(props);
+    this.state = {};
   }
 
   handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value })
-  }
+    this.setState({ [e.target.name]: e.target.value });
+  };
 
   handleAttachment = e => {
-    this.setState({ [e.target.name]: e.target.files[0] })
-  }
+    this.setState({ [e.target.name]: e.target.files[0] });
+  };
 
   handleSubmit = e => {
-    e.preventDefault()
-    const form = e.target
-    fetch('/', {
-      method: 'POST',
+    e.preventDefault();
+    const form = e.target;
+    fetch("/", {
+      method: "POST",
       body: encode({
-        'form-name': form.getAttribute('name'),
-        ...this.state,
-      }),
+        "form-name": form.getAttribute("name"),
+        ...this.state
+      })
     })
-      .then(() => navigate(form.getAttribute('action')))
-      .catch(error => alert(error))
-  }
+      .then(() => navigate(form.getAttribute("action")))
+      .catch(error => alert(error));
+  };
 
   render() {
     return (
       <Layout>
-        <section className="section">
-          <div className="container">
-            <div className="content">
+        <section>
+          <div>
+            <div>
               <h1>File Upload</h1>
               <form
                 name="file-upload"
@@ -59,50 +59,44 @@ export default class Contact extends React.Component {
                 <input type="hidden" name="form-name" value="file-upload" />
                 <div hidden>
                   <label>
-                    Don’t fill this out:{' '}
+                    Don’t fill this out:{" "}
                     <input name="bot-field" onChange={this.handleChange} />
                   </label>
                 </div>
-                <div className="field">
-                  <label className="label" htmlFor={'name'}>
-                    Your name
-                  </label>
-                  <div className="control">
+                <div>
+                  <label htmlFor={"name"}>Your name</label>
+                  <div>
                     <input
-                      className="input"
-                      type={'text'}
-                      name={'name'}
+                      type={"text"}
+                      name={"name"}
                       onChange={this.handleChange}
-                      id={'name'}
+                      id={"name"}
                       required={true}
                     />
                   </div>
                 </div>
-                <div className="field">
-                  <div className="file">
-                    <label className="file-label">
+                <div>
+                  <div>
+                    <label>
                       <input
-                        className="file-input"
                         type="file"
                         name="attachment"
                         onChange={this.handleAttachment}
                       />
-                      <span className="file-cta">
-                        <span className="file-label">Choose a file…</span>
+                      <span>
+                        <span>Choose a file…</span>
                       </span>
                     </label>
                   </div>
                 </div>
-                <div className="field">
-                  <button className="button is-link" type="submit">
-                    Send
-                  </button>
+                <div>
+                  <button type="submit">Send</button>
                 </div>
               </form>
             </div>
           </div>
         </section>
       </Layout>
-    )
+    );
   }
 }
