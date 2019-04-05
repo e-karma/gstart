@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
-import Layout from "../components/Layout";
-import Features from "../components/Features";
-import Testimonials from "../components/Testimonials";
-import Pricing from "../components/Pricing";
-import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+import Layout from "../modules/Layout";
+import Features from "../modules/Features";
+import Testimonials from "../modules/Testimonials";
+import Pricing from "../modules/Pricing";
+import PreviewCompatibleImage from "../modules/PreviewCompatibleImage";
 
 export const ProductPageTemplate = ({
   image,
@@ -156,24 +156,10 @@ export const productPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
         heading
         description
         intro {
           blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
             text
           }
           heading
@@ -182,47 +168,10 @@ export const productPageQuery = graphql`
         main {
           heading
           description
-          image1 {
-            alt
-            image {
-              childImageSharp {
-                fluid(maxWidth: 526, quality: 92) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-          image2 {
-            alt
-            image {
-              childImageSharp {
-                fluid(maxWidth: 526, quality: 92) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-          image3 {
-            alt
-            image {
-              childImageSharp {
-                fluid(maxWidth: 1075, quality: 72) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
         }
         testimonials {
           author
           quote
-        }
-        full_image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
         }
         pricing {
           heading

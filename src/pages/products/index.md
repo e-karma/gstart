@@ -1,6 +1,6 @@
 ---
 templateKey: product-page
-title: Title
+title: Products
 image: /img/screen-shot-2019-03-09-at-12.21.42-am.png
 heading: Heading
 description: Description
@@ -36,20 +36,19 @@ pricing:
         - Green or roasted beans"
         - One or two varieties of beans"
       plan: Small
-      price: '50'
+      price: "50"
     - description: Description
       items:
         - Item Descriptions Here
         - Separated bullets with commas
         - interesting
       plan: Big
-      price: '80'
+      price: "80"
     - description: Description
       items:
         - item1
         - item2
         - item3
       plan: Custom
-      price: '250'
+      price: "250"
 ---
-
