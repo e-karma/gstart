@@ -2,10 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../modules/Layout";
-import Features from "../modules/Features";
-import Testimonials from "../modules/Testimonials";
-import Pricing from "../modules/Pricing";
-import PreviewCompatibleImage from "../modules/PreviewCompatibleImage";
+// import Features from "../modules/Features";
+// import Testimonials from "../modules/Testimonials";
+// import Pricing from "../modules/Pricing";
+// import PreviewCompatibleImage from "../modules/PreviewCompatibleImage";
 
 export const ProductPageTemplate = ({
   image,
@@ -18,8 +18,9 @@ export const ProductPageTemplate = ({
   fullImage,
   pricing
 }) => (
-  <div>
-    <div
+  <React.Fragment>
+    <h1>Products</h1>
+    {/* <div
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
@@ -93,8 +94,8 @@ export const ProductPageTemplate = ({
           </div>
         </div>
       </div>
-    </section>
-  </div>
+    </section> */}
+  </React.Fragment>
 );
 
 ProductPageTemplate.propTypes = {
@@ -172,6 +173,13 @@ export const productPageQuery = graphql`
         testimonials {
           author
           quote
+        }
+        full_image {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
         }
         pricing {
           heading

@@ -37,7 +37,7 @@ class PresentationPage extends React.Component {
       <div>
         <Header
           brand="Material Kit PRO React"
-          links={<HeaderLinks dropdownHoverColor="info" />}
+          // links={<HeaderLinks dropdownHoverColor="info" />}
           fixed
           color="transparent"
           changeColorOnScroll={{

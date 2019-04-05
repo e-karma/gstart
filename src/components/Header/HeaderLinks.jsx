@@ -106,11 +106,7 @@ function HeaderLinks({ ...props }) {
               <Layers className={classes.dropdownIcons} />
               All components
             </Link>,
-            <a
-              href="https://demos.creative-tim.com/material-kit-pro-react/#/documentation/tutorial"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
+            <a target="_blank" className={classes.dropdownLink}>
               <Icon className={classes.dropdownIcons}>content_paste</Icon>
               Documentation
             </a>
@@ -244,8 +240,7 @@ function HeaderLinks({ ...props }) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/material-kit-pro-react"
-          color={window.innerWidth < 960 ? "info" : "white"}
+          // color={window.innerWidth < 960 ? "info" : "white"}
           target="_blank"
           className={classes.navButton}
           round

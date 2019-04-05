@@ -13,11 +13,7 @@ class Parallax extends React.Component {
   constructor(props) {
     super(props);
     let windowScrollTop;
-    if (window.innerWidth >= 768) {
-      windowScrollTop = window.pageYOffset / 3;
-    } else {
-      windowScrollTop = 0;
-    }
+
     this.state = {
       transform: "translate3d(0," + windowScrollTop + "px,0)"
     };
@@ -30,6 +26,11 @@ class Parallax extends React.Component {
         transform: "translate3d(0," + windowScrollTop + "px,0)"
       });
       window.addEventListener("scroll", this.resetTransform);
+    }
+    if (window.innerWidth >= 768) {
+      windowScrollTop = window.pageYOffset / 3;
+    } else {
+      windowScrollTop = 0;
     }
   }
   componentWillUnmount() {
