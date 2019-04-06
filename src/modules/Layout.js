@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 import Footer from "../modules/Footer";
 // import Navbar from "../modules/Navbar";
 import "./all.sass";
+import "circular-std";
 import useSiteMetadata from "./SiteMetadata";
 import Header from "../components/Header/Header.jsx";
 import HeaderLinks from "../components/Header/HeaderLinks.jsx";

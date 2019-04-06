@@ -184,7 +184,7 @@ const card = {
 };
 
 const defaultFont = {
-  fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+  fontFamily: '"CircularStd,Arial,Helvetica,sans-serif',
   fontWeight: "300",
   lineHeight: "1.5em"
 };
@@ -326,11 +326,11 @@ const defaultBoxShadow = {
 const title = {
   color: grayColor[1],
   textDecoration: "none",
-  fontWeight: "700",
+  fontWeight: "400",
   marginTop: "30px",
   marginBottom: "25px",
   minHeight: "32px",
-  fontFamily: `"Roboto Slab", "Times New Roman", serif`
+  fontFamily: `"Circular_black,Arial,Helvetica,sans-serif`
 };
 
 const cardTitle = {
