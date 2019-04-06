@@ -7,7 +7,7 @@ import {
   warningColor,
   dangerColor,
   hexToRgb
-} from "../colors.jsx";
+} from "../variables.jsx";
 
 const parallaxStyle = {
   parallax: {

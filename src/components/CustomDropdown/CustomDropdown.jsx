@@ -16,7 +16,7 @@ import Popper from "@material-ui/core/Popper";
 // core components
 import Button from "../CustomButtons/Button.jsx";
 
-import customDropdownStyle from "../jss/customDropdownStyle.jsx";
+import customDropdownStyle from "./customDropdownStyle.jsx";
 
 class CustomDropdown extends React.Component {
   constructor(props) {

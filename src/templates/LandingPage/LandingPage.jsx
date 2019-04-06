@@ -12,6 +12,8 @@ import Parallax from "../../components/Parallax/Parallax.jsx";
 import GridContainer from "../../components/Grid/GridContainer.jsx";
 import GridItem from "../../components/Grid/GridItem.jsx";
 import bg5 from "../../img/bg5.jpg";
+//           component imports here                    //
+
 // import Button from "components/CustomButtons/Button.jsx";
 // // sections for this page
 // import SectionDescription from "views/PresentationPage/Sections/SectionDescription.jsx";
@@ -25,7 +27,14 @@ import bg5 from "../../img/bg5.jpg";
 // import SectionPricing from "views/PresentationPage/Sections/SectionPricing.jsx";
 
 import presentationStyle from "../../components/presentationStyle.jsx";
-
+// import Card from "../../components/Card/Card.jsx";
+// import Badge from "../../components/Badge/Badge.jsx";
+// import CardAvatar from "../../components/Card/CardAvatar.jsx";
+// import CardBody from "../../components/Card/CardBody.jsx";
+// import CardFooter from "../../components/Card/CardFooter.jsx";
+// import CardHeader from "../../components/Card/CardHeader.jsx";
+// import Accordion from "../../components/Accordion/Accordion.jsx";
+// import RegularButton from "../../components/CustomButtons/Button.jsx";
 class PresentationPage extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -62,90 +71,102 @@ class PresentationPage extends React.Component {
             </GridContainer>
           </div>
         </Parallax>
-        <div className={classNames(classes.main, classes.mainRaised)}>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-
-          {/* <SectionDescription />
+        {/* <div className={classNames(classes.main, classes.mainRaised)}>
+          <SectionDescription />
           <SectionComponents />
           <SectionCards />
           <SectionContent />
           <SectionSections />
           <SectionExamples />
           <SectionFreeDemo />
-          <SectionOverview /> */}
+          <SectionOverview />
         </div>
-        {/* <SectionPricing /> */}
+        <SectionPricing />
+        <Footer
+          theme="white"
+          content={
+            <div>
+              <div className={classes.left}>
+                <a
+                  href="https://www.creative-tim.com/product/material-kit-pro-react"
+                  className={classes.footerBrand}
+                >
+                  Material Kit PRO React
+                </a>
+              </div>
+              <div className={classes.pullCenter}>
+                <List className={classes.list}>
+                  <ListItem className={classes.inlineBlock}>
+                    <a
+                      href="https://www.creative-tim.com/"
+                      className={classes.block}
+                    >
+                      Creative Tim
+                    </a>
+                  </ListItem>
+                  <ListItem className={classes.inlineBlock}>
+                    <a
+                      href="https://www.creative-tim.com/presentation"
+                      className={classes.block}
+                    >
+                      About us
+                    </a>
+                  </ListItem>
+                  <ListItem className={classes.inlineBlock}>
+                    <a
+                      href="//blog.creative-tim.com/"
+                      className={classes.block}
+                    >
+                      Blog
+                    </a>
+                  </ListItem>
+                  <ListItem className={classes.inlineBlock}>
+                    <a
+                      href="https://www.creative-tim.com/license"
+                      className={classes.block}
+                    >
+                      Licenses
+                    </a>
+                  </ListItem>
+                </List>
+              </div>
+              <div className={classes.rightLinks}>
+                <ul>
+                  <li>
+                    <Button
+                      href="https://twitter.com/CreativeTim"
+                      color="twitter"
+                      justIcon
+                      simple
+                    >
+                      <i className="fab fa-twitter" />
+                    </Button>
+                  </li>
+                  <li>
+                    <Button
+                      href="https://dribbble.com/creativetim"
+                      color="dribbble"
+                      justIcon
+                      simple
+                    >
+                      <i className="fab fa-dribbble" />
+                    </Button>
+                  </li>
+                  <li>
+                    <Button
+                      href="https://instagram.com/CreativeTimOfficial"
+                      color="instagram"
+                      justIcon
+                      simple
+                    >
+                      <i className="fab fa-instagram" />
+                    </Button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          }
+        /> */}
       </div>
     );
   }

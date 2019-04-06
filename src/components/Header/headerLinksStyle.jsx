@@ -1,6 +1,6 @@
-import { grayColor, whiteColor, mlAuto, hexToRgb } from "../colors.jsx";
+import { grayColor, whiteColor, mlAuto, hexToRgb } from "../variables.jsx";
 
-import tooltip from "../jss/tooltipsStyle.jsx";
+import tooltip from "./tooltipsStyle.jsx";
 
 const headerLinksStyle = theme => ({
   list: {

@@ -6,7 +6,7 @@ import {
   grayColor,
   mainRaised,
   hexToRgb
-} from "./colors.jsx";
+} from "./variables.jsx";
 import footerStyle from "./ComponentSections/footerStyle.jsx";
 
 const presentationStyle = {

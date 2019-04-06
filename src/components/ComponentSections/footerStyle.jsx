@@ -8,9 +8,9 @@ import {
   dribbbleColor,
   instagramColor,
   grayColor
-} from "../colors.jsx";
+} from "../variables.jsx";
 
-import imagesStyles from "../jss/imagesStyles.jsx";
+import imagesStyles from "./imagesStyles.jsx";
 
 const style = {
   ...imagesStyles,
