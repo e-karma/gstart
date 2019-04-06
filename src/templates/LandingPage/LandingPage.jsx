@@ -71,6 +71,18 @@ class PresentationPage extends React.Component {
             </GridContainer>
           </div>
         </Parallax>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         {/* <div className={classNames(classes.main, classes.mainRaised)}>
           <SectionDescription />
           <SectionComponents />
