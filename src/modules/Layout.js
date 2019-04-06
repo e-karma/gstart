@@ -1,12 +1,19 @@
 import React from "react";
 import Helmet from "react-helmet";
 import Footer from "../modules/Footer";
-import Navbar from "../modules/Navbar";
+// import Navbar from "../modules/Navbar";
 import "./all.sass";
 import useSiteMetadata from "./SiteMetadata";
+import Header from "../components/Header/Header.jsx";
+import HeaderLinks from "../components/Header/HeaderLinks.jsx";
+// var hist = createBrowserHistory();
 
 const TemplateWrapper = ({ children }) => {
-  const { title, description } = useSiteMetadata();
+  //  componentDidMount() {
+  //    window.scrollTo(0, 0);
+  //    document.body.scrollTop = 0;
+  //  }
+  const { title, description, classes, ...rest } = useSiteMetadata();
   return (
     <div>
       <Helmet>
@@ -44,7 +51,18 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:url" content="/" />
         <meta property="og:image" content="/img/og-image.jpg" />
       </Helmet>
-      <Navbar />
+      {/* <Navbar /> */}
+      <Header
+        brand="eWebDesign.co"
+        links={<HeaderLinks dropdownHoverColor="info" />}
+        fixed
+        color="white"
+        changeColorOnScroll={{
+          height: 100,
+          color: "info"
+        }}
+        {...rest}
+      />
       <div>{children}</div>
       <Footer />
     </div>

@@ -54,9 +54,9 @@ const hexToRgb = input => {
 const drawerWidth = 260;
 
 const primaryColor = [
-  "#9c27b0",
-  "#ab47bc",
-  "#8e24aa",
+  "#28df04", #28df04
+  "#28df04",
+  "#28df04",
   "#af2cc5",
   "#e1bee7",
   "#ba68c8"

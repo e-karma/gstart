@@ -14,7 +14,7 @@ class BlogRoll extends React.Component {
             <div key={post.id}>
               <article>
                 <p>
-                  {/* <Link to={post.fields.slug}>{post.frontmatter.title}</Link> */}
+                  <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
                   <span> &bull; </span>
                   <span>{post.frontmatter.date}</span>
                 </p>
@@ -22,7 +22,7 @@ class BlogRoll extends React.Component {
                   {post.excerpt}
                   <br />
                   <br />
-                  {/* <Link to={post.fields.slug}>Keep Reading →</Link> */}
+                  <Link to={post.fields.slug}>Keep Reading →</Link>
                 </p>
               </article>
             </div>

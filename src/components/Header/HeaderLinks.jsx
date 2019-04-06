@@ -3,7 +3,8 @@ import React from "react";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 // react components for routing our app without refresh
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { Link } from "gatsby";
 
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
@@ -99,13 +100,13 @@ function HeaderLinks({ ...props }) {
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link to="/" className={classes.dropdownLink}>
+            <a to="/" className={classes.dropdownLink}>
               <LineStyle className={classes.dropdownIcons} /> Presentation Page
-            </Link>,
-            <Link to="/components" className={classes.dropdownLink}>
+            </a>,
+            <a to="/components" className={classes.dropdownLink}>
               <Layers className={classes.dropdownIcons} />
               All components
-            </Link>,
+            </a>,
             <a target="_blank" className={classes.dropdownLink}>
               <Icon className={classes.dropdownIcons}>content_paste</Icon>
               Documentation
@@ -125,62 +126,30 @@ function HeaderLinks({ ...props }) {
           }}
           buttonIcon={ViewDay}
           dropdownList={[
-            <Link
-              to="/sections#headers"
-              className={classes.dropdownLink}
-              onClick={e => smoothScroll(e, "headers")}
-            >
+            <a to="/" className={classes.dropdownLink}>
               <Dns className={classes.dropdownIcons} /> Headers
-            </Link>,
-            <Link
-              to="/sections#features"
-              className={classes.dropdownLink}
-              onClick={e => smoothScroll(e, "features")}
-            >
+            </a>,
+            <a to="/" className={classes.dropdownLink}>
               <Build className={classes.dropdownIcons} /> Features
-            </Link>,
-            <Link
-              to="/sections#blogs"
-              className={classes.dropdownLink}
-              onClick={e => smoothScroll(e, "blogs")}
-            >
+            </a>,
+            <a to="/" className={classes.dropdownLink}>
               <ListIcon className={classes.dropdownIcons} /> Blogs
-            </Link>,
-            <Link
-              to="/sections#teams"
-              className={classes.dropdownLink}
-              onClick={e => smoothScroll(e, "teams")}
-            >
+            </a>,
+            <a to="/" className={classes.dropdownLink}>
               <People className={classes.dropdownIcons} /> Teams
-            </Link>,
-            <Link
-              to="/sections#projects"
-              className={classes.dropdownLink}
-              onClick={e => smoothScroll(e, "projects")}
-            >
+            </a>,
+            <a to="/" className={classes.dropdownLink}>
               <Assignment className={classes.dropdownIcons} /> Projects
-            </Link>,
-            <Link
-              to="/sections#pricing"
-              className={classes.dropdownLink}
-              onClick={e => smoothScroll(e, "pricing")}
-            >
+            </a>,
+            <a to="/" className={classes.dropdownLink}>
               <MonetizationOn className={classes.dropdownIcons} /> Pricing
-            </Link>,
-            <Link
-              to="/sections#testimonials"
-              className={classes.dropdownLink}
-              onClick={e => smoothScroll(e, "testimonials")}
-            >
+            </a>,
+            <a to="/" className={classes.dropdownLink}>
               <Chat className={classes.dropdownIcons} /> Testimonials
-            </Link>,
-            <Link
-              to="/sections#contacts"
-              className={classes.dropdownLink}
-              onClick={e => smoothScroll(e, "contacts")}
-            >
+            </a>,
+            <a to="/" className={classes.dropdownLink}>
               <Call className={classes.dropdownIcons} /> Contacts
-            </Link>
+            </a>
           ]}
         />
       </ListItem>
@@ -196,45 +165,45 @@ function HeaderLinks({ ...props }) {
           }}
           buttonIcon={ViewCarousel}
           dropdownList={[
-            <Link to="/about-us" className={classes.dropdownLink}>
+            <a to="/about-us" className={classes.dropdownLink}>
               <AccountBalance className={classes.dropdownIcons} /> About Us
-            </Link>,
-            <Link to="/blog-post" className={classes.dropdownLink}>
+            </a>,
+            <a to="/blog-post" className={classes.dropdownLink}>
               <ArtTrack className={classes.dropdownIcons} /> Blog Post
-            </Link>,
-            <Link to="/blog-posts" className={classes.dropdownLink}>
+            </a>,
+            <a to="/blog-posts" className={classes.dropdownLink}>
               <ViewQuilt className={classes.dropdownIcons} /> Blog Posts
-            </Link>,
-            <Link to="/contact-us" className={classes.dropdownLink}>
+            </a>,
+            <a to="/contact-us" className={classes.dropdownLink}>
               <LocationOn className={classes.dropdownIcons} /> Contact Us
-            </Link>,
-            <Link to="/landing-page" className={classes.dropdownLink}>
+            </a>,
+            <a to="/landing-page" className={classes.dropdownLink}>
               <ViewDay className={classes.dropdownIcons} /> Landing Page
-            </Link>,
-            <Link to="/login-page" className={classes.dropdownLink}>
+            </a>,
+            <a to="/login-page" className={classes.dropdownLink}>
               <Fingerprint className={classes.dropdownIcons} /> Login Page
-            </Link>,
-            <Link to="/pricing" className={classes.dropdownLink}>
+            </a>,
+            <a to="/pricing" className={classes.dropdownLink}>
               <AttachMoney className={classes.dropdownIcons} /> Pricing Page
-            </Link>,
-            <Link to="/shopping-cart-page" className={classes.dropdownLink}>
+            </a>,
+            <a to="/shopping-cart-page" className={classes.dropdownLink}>
               <ShoppingBasket className={classes.dropdownIcons} /> Shopping Cart
-            </Link>,
-            <Link to="/ecommerce-page" className={classes.dropdownLink}>
+            </a>,
+            <a to="/ecommerce-page" className={classes.dropdownLink}>
               <Store className={classes.dropdownIcons} /> Ecommerce Page
-            </Link>,
-            <Link to="/product-page" className={classes.dropdownLink}>
+            </a>,
+            <a to="/product-page" className={classes.dropdownLink}>
               <ShoppingCart className={classes.dropdownIcons} /> Product Page
-            </Link>,
-            <Link to="/profile-page" className={classes.dropdownLink}>
+            </a>,
+            <a to="/profile-page" className={classes.dropdownLink}>
               <AccountCircle className={classes.dropdownIcons} /> Profile Page
-            </Link>,
-            <Link to="/signup-page" className={classes.dropdownLink}>
+            </a>,
+            <a to="/signup-page" className={classes.dropdownLink}>
               <PersonAdd className={classes.dropdownIcons} /> Signup Page
-            </Link>,
-            <Link to="/error-page" className={classes.dropdownLink}>
+            </a>,
+            <a to="/error-page" className={classes.dropdownLink}>
               <Error className={classes.dropdownIcons} /> Error Page
-            </Link>
+            </a>
           ]}
         />
       </ListItem>

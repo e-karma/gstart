@@ -7,7 +7,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // import ListItem from "@material-ui/core/ListItem";
 // core components
 import Header from "../../components/Header/Header.jsx";
-import HeaderLinks from "../../components/Header/HeaderLinks.jsx";
+// import HeaderLinks from "../../components/Header/HeaderLinks.jsx";
 import Parallax from "../../components/Parallax/Parallax.jsx";
 import GridContainer from "../../components/Grid/GridContainer.jsx";
 import GridItem from "../../components/Grid/GridItem.jsx";
@@ -27,6 +27,8 @@ import bg5 from "../../img/bg5.jpg";
 // import SectionPricing from "views/PresentationPage/Sections/SectionPricing.jsx";
 
 import presentationStyle from "../../components/presentationStyle.jsx";
+// import SectionHeaders from "../../sections/SectionHeaders/SectionHeaders.jsx";
+
 // import Card from "../../components/Card/Card.jsx";
 // import Badge from "../../components/Badge/Badge.jsx";
 // import CardAvatar from "../../components/Card/CardAvatar.jsx";
@@ -50,7 +52,7 @@ class PresentationPage extends React.Component {
           fixed
           color="transparent"
           changeColorOnScroll={{
-            height: 400,
+            height: 100,
             color: "info"
           }}
         />
@@ -71,20 +73,9 @@ class PresentationPage extends React.Component {
             </GridContainer>
           </div>
         </Parallax>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        {/* <div className={classNames(classes.main, classes.mainRaised)}>
-          <SectionDescription />
+        {/* 
+        <div className={classNames(classes.main, classes.mainRaised)}>
+         <SectionDescription />
           <SectionComponents />
           <SectionCards />
           <SectionContent />
@@ -92,9 +83,9 @@ class PresentationPage extends React.Component {
           <SectionExamples />
           <SectionFreeDemo />
           <SectionOverview />
-        </div>
-        <SectionPricing />
-        <Footer
+        </div> */}
+
+        {/* <Footer
           theme="white"
           content={
             <div>

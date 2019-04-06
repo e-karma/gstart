@@ -1,11 +1,25 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
-import Layout from "../modules/Layout";
 
+import Layout from "../modules/Layout";
+// import withStyles from "@material-ui/core/styles/withStyles";
+// import Parallax from "../components/Parallax/Parallax.jsx";
+// import GridContainer from "../components/Grid/GridContainer.jsx";
+// import GridItem from "../components/Grid/GridItem.jsx";
+import SectionHeaders from "../sections/SectionHeaders/SectionHeaders";
+import SectionFeatures from "../sections/SectionFeatures/SectionFeatures";
+import SectionContacts from "../sections/SectionContacts/SectionContacts";
+import SectionBlogs from "../sections/SectionBlogs/SectionBlogs";
+import SectionPricing from "../sections/SectionPricing/SectionPricing";
+import SectionProjects from "../sections/SectionProjects/SectionProjects";
+import SectionTeams from "../sections/SectionTeams/SectionTeams";
+import SectionTestimonials from "../sections/SectionTestimonials/SectionTestimonials";
 import "../styles/scss/index.scss";
 
-import LandingPage from "./LandingPage/LandingPage";
+// import LandingPage from "./LandingPage/LandingPage";
+// import presentationStyle from "../views/presentationStyle";
+
 export const IndexPageTemplate = ({
   image,
   title,
@@ -13,10 +27,37 @@ export const IndexPageTemplate = ({
   subheading,
   mainpitch,
   description,
-  intro
+  intro,
+  classes
 }) => (
   <React.Fragment>
     <div
+      style={{
+        backgroundImage: `url(${
+          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+        })`,
+        backgroundPosition: `top left`,
+        backgroundAttachment: `fixed`
+      }}
+      // className={classes.parallax}
+    >
+      {/* <div className={classes.container}>
+        <GridContainer>
+          <GridItem>
+            <div className={classes.brand}>
+              <h1>
+                Material Kit React
+                <span className={classes.proBadge}>PRO</span>
+              </h1>
+              <h3 className={classes.title}>
+                A Badass Material-UI Kit based on Material Design.
+              </h3>
+            </div>
+          </GridItem>
+        </GridContainer>
+      </div> */}
+    </div>
+    {/* <div
       className="full-width-image margin-top-0"
       style={{
         backgroundImage: `url(${
@@ -63,8 +104,26 @@ export const IndexPageTemplate = ({
           {subheading}
         </h3>
       </div>
-    </div>
-    <LandingPage />
+    </div> */}
+
+    <SectionHeaders />
+    <SectionFeatures />
+    <SectionPricing />
+    <SectionContacts />
+    <SectionBlogs />
+    <SectionPricing />
+    <SectionProjects />
+    <SectionTeams />
+    <SectionTestimonials />
+
+    {/* <SectionDescription />
+      <SectionComponents />
+      <SectionCards />
+      <SectionContent />
+      <SectionSections />
+      <SectionExamples />
+      <SectionFreeDemo />
+      <SectionOverview /> */}
 
     <h1>{title} </h1>
     <h2>{subheading}</h2>
